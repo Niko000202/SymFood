@@ -18,3 +18,4 @@ conda activate symfood
 ## Notes
 - If you are using Docker, ensure CUDA 11.3 (or compatible) is available in the container.
 - Update dataset and pretrained backbone paths in the config files before running any scripts.
+- Full code and instructions will be released once the paper is accepted.
