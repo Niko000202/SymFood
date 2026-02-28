@@ -13,19 +13,32 @@ This repository serves as the official implementation for the paper:
 
 ## 📂 Data Preparation
 
-Please organize your dataset directory as follows:
+### 1. Dataset (MS COCO 2014)
+We use the **MS COCO 2014** dataset for training and evaluation. Please download the images and annotations from the [official website](http://cocodataset.org/#download).
 
+Please organize your dataset directory as follows:
 ```text
 SyMFood/
 ├── data/
 ├── dataset/
 │   ├── images/
-│   ├── zsd_annotations/
+│   │   ├── train2014/      <-- MS COCO 2014 Train Images
+│   │   └── val2014/        <-- MS COCO 2014 Val Images
+│   ├── zsd_annotations/    <-- Our provided annotations
 │   └── visual_prompts/
 ├── zsd_detr/
 └── ...
 
 ```
+
+2. Pretrained Backbone
+We use ResNet-50 pre-trained on ImageNet as the visual backbone, following the Detectron2 format.
+
+Please download the weights and place them in your pretrained models folder (or update the path in config.py):
+
+ResNet-50 (Detectron2 format): [Download Link](https://dl.fbaipublicfiles.com/detectron2/ImageNetPretrained/MSRA/R-50.pkl)
+
+
 
 ## 🛠️ Environment Requirements
 
