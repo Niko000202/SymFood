@@ -1,4 +1,3 @@
-```markdown
 # SyMFood: Synergistic Multi-Modal Prompting for Fine-Grained Zero-Shot Food Detection
 
 This repository serves as the official implementation for the paper:  
