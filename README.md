@@ -1,10 +1,5 @@
-这是完整、修正后的 `README.md` 代码。你可以直接点击代码块右上角的 **"Copy"** 按钮，然后粘贴到你的 `README.md` 文件中。
-
 ```markdown
 # SyMFood: Synergistic Multi-Modal Prompting for Fine-Grained Zero-Shot Food Detection
-
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
-[![TCSVT](https://img.shields.io/badge/Journal-IEEE%20TCSVT%202026-blue)](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=76)
 
 This repository serves as the official implementation for the paper:  
 **"SyMFood: Synergistic Multi-Modal Prompting for Fine-Grained Zero-Shot Food Detection"**, published in *IEEE Transactions on Circuits and Systems for Video Technology (TCSVT), 2026*.
@@ -14,7 +9,8 @@ This repository serves as the official implementation for the paper:
 ---
 
 ## 📢 News
-* **[2026-02]** Our paper has been accepted by IEEE TCSVT! The code and models are now released.
+* **[2026-02]** Trainging code is released!
+* **[2026-02]** Our paper has been accepted by IEEE TCSVT!
 
 ## 📂 Data Preparation
 
