@@ -31,7 +31,7 @@ SyMFood/
 
 ```
 
-2. Pretrained Backbone
+### 2. Pretrained Backbone
 We use ResNet-50 pre-trained on ImageNet as the visual backbone, following the Detectron2 format.
 
 Please download the weights and place them in your pretrained models folder (or update the path in config.py):
