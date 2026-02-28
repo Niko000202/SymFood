@@ -1,4 +1,5 @@
 import torch
+import time
 from detrex.modeling.criterion import SetCriterion
 from detrex.utils import get_world_size, is_dist_avail_and_initialized
 
@@ -30,8 +31,13 @@ class TwoStageCriterion(SetCriterion):
 
         """
 
-        outputs_without_aux = {k: v for k, v in outputs.items() if k != "aux_outputs"}
-
+        # outputs_without_aux = {k: v for k, v in outputs.items() if k != "aux_outputs"}
+        outputs_without_aux = {
+            k: v for k, v in outputs.items()
+            if k in ["pred_logits", "pred_boxes"]}
+        # print("outputs_without_aux:", outputs_without_aux)
+        # print("targets:", targets)
+        # time.sleep(100000)
         # Retrieve the matching between the outputs of the last layer and the targets
         indices = self.matcher(outputs_without_aux, targets)
 
