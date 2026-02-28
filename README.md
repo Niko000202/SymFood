@@ -8,8 +8,8 @@ This repository serves as the official implementation for the paper:
 ---
 
 ## 📢 News
-* **[2026-02]** Trainging code is released!
-* **[2026-02]** Our paper has been accepted by IEEE TCSVT!
+* **[2026-02]** The code and models are now released.
+* **[2026-02]** 🎉🎉Our paper has been accepted by IEEE TCSVT!
 
 ## 📂 Data Preparation
 
