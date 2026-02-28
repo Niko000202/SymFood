@@ -92,7 +92,7 @@ python train_net.py --eval_only True --config-file zsd_detr/configs/config.py --
 If you find this code or paper useful for your research, please cite our paper:
 
 ```bibtex
-@ARTICLE{11414166,
+@ARTICLE{xlwang2026symfood,
   author={Wang, Xinlong and Min, Weiqing and Liu, Shoulong and Sheng, Guorui and Jiang, Shuqiang},
   journal={IEEE Transactions on Circuits and Systems for Video Technology}, 
   title={SyMFood: Synergistic Multi-Modal Prompting for Fine-Grained Zero-Shot Food Detection}, 
