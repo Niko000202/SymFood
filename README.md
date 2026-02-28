@@ -108,4 +108,4 @@ If you find this code or paper useful for your research, please cite our paper:
 
 ## 📧 Contact
 
-If you have any questions regarding the code or the paper, please feel free to contact 'xinlongwang@m.ldu.edu.cn'.
+If you have any questions regarding the code or the paper, please feel free to contact xinlongwang@m.ldu.edu.cn.
