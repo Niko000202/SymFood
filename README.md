@@ -1,16 +1,26 @@
-# Code for SyMFood: Synergistic Multi-Modal Prompting for Fine-Grained Zero-Shot Food Detection
-## Overview
+这是完整、修正后的 `README.md` 代码。你可以直接点击代码块右上角的 **"Copy"** 按钮，然后粘贴到你的 `README.md` 文件中。
+
+```markdown
+# SyMFood: Synergistic Multi-Modal Prompting for Fine-Grained Zero-Shot Food Detection
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
+[![TCSVT](https://img.shields.io/badge/Journal-IEEE%20TCSVT%202026-blue)](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=76)
+
 This repository serves as the official implementation for the paper:  
 **"SyMFood: Synergistic Multi-Modal Prompting for Fine-Grained Zero-Shot Food Detection"**, published in *IEEE Transactions on Circuits and Systems for Video Technology (TCSVT), 2026*.
 
-**Authors:** Xinlong Wang, Weiqing and Min, Shoulong Liu, Guorui Sheng, Shuqiang Jiang.
+**Authors:** Xinlong Wang, Weiqing Min, Shoulong Liu, Guorui Sheng, Shuqiang Jiang.
 
 ---
 
 ## 📢 News
 * **[2026-02]** Our paper has been accepted by IEEE TCSVT! The code and models are now released.
 
-## Data Preparation
+## 📂 Data Preparation
+
+Please organize your dataset directory as follows:
+
+```text
 SyMFood/
 ├── data/
 ├── dataset/
@@ -20,16 +30,19 @@ SyMFood/
 ├── zsd_detr/
 └── ...
 
+```
+
 ## 🛠️ Environment Requirements
 
-We strongly recommend using **Anaconda** to manage the environment. The dependencies are specified in `environment.yaml`.\
+We strongly recommend using **Anaconda** to manage the environment. The dependencies are specified in `environment.yaml`.
 
-- Python 3.8
-- PyTorch 1.12.1 + CUDA 11.3
-- MMDetection (2.x) + MMCV (2.x)
-- Detectron2 / Detrex (for feature extraction components)
+* Python 3.8
+* PyTorch 1.12.1 + CUDA 11.3
+* MMDetection (2.x) + MMCV (2.x)
+* Detectron2 / Detrex (for feature extraction components)
 
-## Create the environment
+### Installation
+
 ```bash
 # Clone the repository
 git clone [https://github.com/YourUsername/SyMFood.git](https://github.com/YourUsername/SyMFood.git)
@@ -39,33 +52,51 @@ cd SyMFood
 conda env create -f environment.yaml
 
 # Activate the environment
-conda activate symfood  # Please check the name inside your yaml file
+conda activate symfood
+
+```
 
 ## 🚀 Training
-We provide two ways to train the model. Please ensure you have properly set up the environment and dataset paths in zsd_detr/configs/config.py before running.
 
-Option 1: Training with Shell Script (Recommended)
+We provide two ways to train the model. Please ensure you have properly set up the environment and dataset paths in `zsd_detr/configs/config.py` before running.
+
+### Option 1: Training with Shell Script (Recommended)
+
 You can simply run the provided shell script:
-'''bash
+
+```bash
 sh train.sh
 
-Option 2: Training with Python Command
+```
+
+### Option 2: Training with Python Command
+
 Alternatively, you can manually run the training script with specific arguments:
-'''bash
+
+```bash
 python train_net.py --config-file zsd_detr/configs/config.py --num-gpus 1
 
-Inference / Evaluation
+```
+
+## ⚡ Inference / Evaluation
+
 To evaluate the model (Zero-Shot Detection performance) using the trained weights, run the following command:
-'''bash
+
+```bash
 python train_net.py --eval_only True --config-file zsd_detr/configs/config.py --num-gpus 1
 
+```
 
-## Notes
-- If you are using Docker, ensure CUDA 11.3 (or compatible) is available in the container.
-- Update dataset and pretrained backbone paths in the config files before running any scripts.
-- Full code and instructions will be released once the paper is accepted.
+## ⚠️ Notes
 
-### Citation
+* If you are using Docker, ensure **CUDA 11.3** (or compatible) is available in the container.
+* Update dataset and pretrained backbone paths in the config files before running any scripts.
+
+## 📝 Citation
+
+If you find this code or paper useful for your research, please cite our paper:
+
+```bibtex
 @ARTICLE{11414166,
   author={Wang, Xinlong and Min, Weiqing and Liu, Shoulong and Sheng, Guorui and Jiang, Shuqiang},
   journal={IEEE Transactions on Circuits and Systems for Video Technology}, 
@@ -77,3 +108,13 @@ python train_net.py --eval_only True --config-file zsd_detr/configs/config.py --
   keywords={Visualization;Semantics;Zero shot learning;Videos;Grounding;Vectors;Object detection;Feature extraction;Training;Iterative methods;Food Computing;Zero-Shot Learning;Zero-Shot Detection;Cross-Modal Fusion;Food Detection},
   doi={10.1109/TCSVT.2026.3668226}
 }
+
+```
+
+## 📧 Contact
+
+If you have any questions regarding the code or the paper, please feel free to contact: **Xinlong Wang** (Your Email Here).
+
+```
+
+```
