@@ -108,8 +108,8 @@ If you find this code or paper useful for your research, please cite our paper:
 
 ## 📧 Contact
 
-If you have any questions regarding the code or the paper, please feel free to contact: **Xinlong Wang** (Your Email Here).
+If you have any questions regarding the code or the paper, please feel free to contact:
 
 ```
-
+Xinlong Wang (xinlongwang@m.ldu.edu.cn)
 ```
